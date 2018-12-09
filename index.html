@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>HTML</title>
-    </head>
-      
-    <body>
-        <h1>LEE IMJAE </h1>
-        <p>test</p>
-        <img src="http://htmlfive.co.kr/html5/xe/layouts/sketchbook5/img/chrome.png" alt="chrome">
-    </body>
-    <script>
-        function changeimage() {
-            var image = document.getElementById('abc');
-            if (image.src.match("naver")) {
-                image.src = "https://pixabay.com/static/uploads/photo/2015/02/13/09/47/mail-634902__180.png";
-            } else {
-                image.src = "http://img.naver.net/static/www/u/2013/0731/nmms_224940510.gif";
-            }
+
+<head>
+    <title>HTML</title>
+</head>
+
+<body>
+    <h1>LEE IMJAE </h1>
+    <p>test</p>
+    <img src="http://htmlfive.co.kr/html5/xe/layouts/sketchbook5/img/chrome.png" alt="chrome">
+    <p>아래 이미지를 클릭하면 다른 이미지로 변경됩니다!</p>
+<img id="abc" onclick="changeimage()" src="http://img.naver.net/static/www/u/2013/0731/nmms_224940510.gif">
+</body>
+<script>
+    function changeimage() {
+        var image = document.getElementById('abc');
+        if (image.src.match("naver")) {
+            image.src = "https://pixabay.com/static/uploads/photo/2015/02/13/09/47/mail-634902__180.png";
+        } else {
+            image.src = "http://img.naver.net/static/www/u/2013/0731/nmms_224940510.gif";
         }
-        </script>
-        
-        
+    }
+</script>
+
+
 </html>>
